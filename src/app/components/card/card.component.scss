@@ -1,0 +1,51 @@
+.card {
+  width: 300px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 16px;
+
+  .subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      width: 24px;
+      height: 24px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: flex-end;
+
+      &.high {
+        background: #ff0000;
+        box-shadow: inset 5px 5px 10px #cc0000,
+                    inset -5px -5px 10px #ff0000;
+      }
+      &.medium {
+        background: #ffa500;
+        box-shadow: inset 5px 5px 10px #cc8400,
+            inset -5px -5px 10px #ffc600;
+      }
+      &.low {
+        background: #ffff00;
+        box-shadow: inset 5px 5px 10px #cccc00,
+            inset -5px -5px 10px #ffff00;
+      }
+      &.done {
+        background: #00ff00;
+        box-shadow: inset 5px 5px 10px #00cc00,
+                    inset -5px -5px 10px #00ff00;
+      }
+    }
+  }
+  &.card-todo {
+    background: linear-gradient(145deg, #ffffff, #e1e1e1);
+    box-shadow: 8px 8px 32px #c8c8c8, -8px -8px 32px #ffffff;
+  }
+  &.card-complete {
+    background: #fafafa;
+    box-shadow: inset 8px 8px 32px #c8c8c8,
+                inset -8px -8px 32px #ffffff;
+  }
+}
+
